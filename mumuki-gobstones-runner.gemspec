@@ -22,6 +22,7 @@ Gem::Specification.new do |spec|
   spec.add_dependency 'gobstones-board', '~> 1.18'
   spec.add_dependency 'gobstones-blockly', '~> 0.24.0'
   spec.add_dependency 'gobstones-code-runner', '~> 0.6'
+  spec.add_dependency 'gobstones-test-runner', '~> 0.1'
 
   spec.add_development_dependency 'bundler', '>= 1.7', '< 3'
   spec.add_development_dependency 'rake', '~> 10.0'

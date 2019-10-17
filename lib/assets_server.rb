@@ -13,6 +13,10 @@ class Mumukit::Server::App < Sinatra::Base
     get_asset route, Gobstones::CodeRunner.assets_path_for(path), type
   end
 
+  def self.get_runner_asset(route, path, type)
+    get_asset route, Gobstones::TestRunner.assets_path_for(path), type
+  end
+
   ['polymer', 'polymer-mini', 'polymer-micro'].each { |name|
     get_board_asset "#{name}.html", "htmls/vendor/#{name}.html", 'text/html'
   }
@@ -22,6 +26,9 @@ class Mumukit::Server::App < Sinatra::Base
 
   get_submit_asset 'editor/gobstones-code-runner.html', 'htmls/gobstones-code-runner.html', 'text/html'
 
+  get_runner_asset 'runner.js', 'javascripts/gobstones-test-runner.js', 'application/javascript'
+
+  get_local_asset 'local.js',  'lib/render/local.js',  'application/javascript'
   get_local_asset 'editor/editor.js', 'lib/render/editor/editor.js', 'application/javascript'
   get_local_asset 'editor/editor.css', 'lib/render/editor/editor.css', 'text/css'
   get_local_asset 'editor/editor.html', 'lib/render/editor/editor.html', 'text/html'
