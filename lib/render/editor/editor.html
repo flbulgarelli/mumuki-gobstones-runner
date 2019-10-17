@@ -534,7 +534,7 @@
         const code = editor.getStudentCode();
         const teacherCode = editor.getTeacherCode() || "";
         const finalBoard = this._getTargetBoard();
-        const solution = {content: xml};
+        const solution = {content: xml, sourceCode: code, sourceExtraCode: teacherCode};
         const executionSpeed = 2;
 
         this._cleanState();
