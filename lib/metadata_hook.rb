@@ -13,6 +13,10 @@ class GobstonesMetadataHook < Mumukit::Hook
         html: [
           'assets/polymer.html',
           'assets/gs-board.html'
+        ],
+        js: [
+          'assets/runner.js',
+          'assets/local.js'
         ]
       },
       editor_assets_urls: {
