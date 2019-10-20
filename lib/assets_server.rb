@@ -28,7 +28,7 @@ class Mumukit::Server::App < Sinatra::Base
 
   get_runner_asset 'runner.js', 'javascripts/gobstones-test-runner.js', 'application/javascript'
 
-  get_local_asset 'local.js',  'lib/render/local.js',  'application/javascript'
+  get_local_asset 'offline.js',  'lib/render/offline.js',  'application/javascript'
   get_local_asset 'editor/editor.js', 'lib/render/editor/editor.js', 'application/javascript'
   get_local_asset 'editor/editor.css', 'lib/render/editor/editor.css', 'text/css'
   get_local_asset 'editor/editor.html', 'lib/render/editor/editor.html', 'text/html'

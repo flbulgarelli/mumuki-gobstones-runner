@@ -17,7 +17,7 @@ class GobstonesMetadataHook < Mumukit::Hook
         ],
         js: [
           'assets/runner.js',
-          'assets/local.js'
+          'assets/offline.js'
         ]
       },
       editor_assets_urls: {
